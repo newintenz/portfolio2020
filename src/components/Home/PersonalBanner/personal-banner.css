@@ -1,0 +1,22 @@
+.personal-banner {
+    background: #f3f3f3;
+    padding: 5.5em 0px;
+    background-image: url('../../../img/mosaic.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+    margin-bottom: 80px;
+    box-shadow: inset 0px 0px 30px #999;
+}
+ 
+/* .personal-banner p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+} */
+
+
+
+.profile-pic {
+    border: solid 4px #fff;
+}

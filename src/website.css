@@ -1,0 +1,147 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: #444;
+}
+
+h1 {
+    font-size: 3.3em;
+}
+
+p {
+    color: #888;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    padding: 0px !important;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.pageTitle {
+    text-align: center;
+    background: url("./img/mosaic.jpg");
+    background-attachment: fixed;
+    padding: 3em 0px; 
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    box-shadow: inset 0px 0px 2px #999;
+}
+
+
+/* @media (min-width: 1500px) {
+    .container{
+        max-width: 1500px;
+    }
+} */
+
+.list-group-flush li {
+    padding-left: 0px;
+}
+
+.shadow {
+    box-shadow: 5px 0px 15px #fefefe;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.btn.hipcool {
+    /* background-image: linear-gradient(90deg, rgb(0, 255, 179) 20%, rgb(176, 11, 226)); */
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bolder;
+    border: 0px;
+    border-radius: 25px;
+    padding: .8em 3em;
+}
+
+.btn-purple {
+     background: linear-gradient(45deg, rgb(255, 24, 132) 10% ,rgb(176, 11, 226));
+}
+
+.btn-green {
+     background: linear-gradient(45deg,rgb(255, 169, 251) 10%,  rgb(30, 201, 186));
+}
+
+.btn-light {
+    background-color:  rgb(255, 24, 132);
+    color: #fff;
+    transition: all 0.2s linear;
+    border: none;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+.btn-light:hover {
+    background: rgb(196, 0, 91);
+    color: #fff;
+}
+
+.btn-light.active {
+    background-color:  rgb(196, 0, 91) !important;
+    color: #fff !important;
+}
+
+/* .btn-light:active {
+    background-color:  rgb(176, 11, 226) !important;
+    color: #fff;
+} */
+
+
+.footer-slant {
+    padding-top: 100px;
+    background: linear-gradient(45deg, rgb(255, 24, 132) 20% ,rgb(176, 11, 226));
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    background:  url("../src/img/business-comp.jpg") ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    min-height: 500px;
+    /* margin-top: -50px; */
+    z-index: 500;
+}
+
+.footer-slant h3, .footer-slant p{
+    color: #fff !important;
+}
+
+.bottom-strip {
+    padding: 15px 0px 5px 0px;
+    background: rgb(22, 22, 22);
+    color: #989898;
+    font-size: .6em;
+}
+
+
+@media (max-width: 600px) {
+    .btn.hipcool {
+        padding: .5em 1em;
+        font-size: .9em ;
+    }
+}

@@ -1,7 +1,8 @@
 import React from "react";
+import TitleBar from "../components/TitleBar";
 
 const contact = () => {
-    return <h1>Contact </h1>;
+    return <TitleBar pageTitle='Lets talk' />
 }
 
 export default contact;

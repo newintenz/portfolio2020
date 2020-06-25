@@ -1,7 +1,11 @@
 import React from "react";
+import TitleBar from "../components/TitleBar";
 
 const about = () => {
-    return <h1>About me </h1>;
+    return (
+        <TitleBar pageTitle='About me' />
+    )
+    
 }
 
 export default about;

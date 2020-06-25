@@ -4,10 +4,17 @@
 
 .nav-link {
     color: #fff !important;
+    font-family: Quicksand;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: .6em 1em;
 }
 
 .navbar-brand {
     color: #fff !important;
 }
 
+.navbar-toggler span{
+    color: #fff !important;
+}
 

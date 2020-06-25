@@ -20,7 +20,7 @@ const data  = [
         key: "3",
         title: "Something Special",
         description: "Submit is a web based application that helps automate the process of teacher placement while providing a platform for schools to keeps track of absences and lesson plan distribution.",
-        category: "Design",
+        category: "Print",
         image: "3.jpg",
         technologies: ["PHP", "Javascript", "Bootstrap", "MySQL", "KronJob"]
     },

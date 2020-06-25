@@ -23,7 +23,6 @@ class Portfolio extends Component {
     }
 
     loadOriginalData = () => {
-        const portData = [...data];
         this.setState({portfolio_data: data});
     }
 

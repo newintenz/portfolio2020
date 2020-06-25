@@ -36,33 +36,36 @@ const CategoryMenu = (props) => {
 
     return (
         <div className='container'>
-            
+
+            <div className='row'>
+            <div className='col'>
             {/* BUTTON GROUP HIDES ON SMALL VIEWPORT */}
-            <div  className="btn-group d-none d-sm-none d-md-block d-lg-block" role="group">
-            <button onClick={ ()=>changeCat(null) } className={allCatsShown()} >Show all</button>
+                    <div  className="btn-group d-none d-sm-none d-md-block d-lg-block" role="group">
+                    <button onClick={ ()=>changeCat(null) } className={allCatsShown()} >Show all</button>
 
-                {    uniqueCat.map(category => {
-                        return  (<button key={category} onClick={ ()=>changeCat(category) } className={setClasses(category)} >{category}</button>)
-                })
-                }
-            </div>
-
-
-            {/* Dropdown MENU HIDDEN ON LARGE VIEWPORTS */}
-            
-            <div className='d-block d-sm-block d-md-none  px-4'>
-            
-                <select className="form-control form-control-md" onChange={(e) => changeCategory(e)}>
-                <option key="213231" value="all" >Show all</option>
-                    { 
-                    uniqueCat.map(category => {
-                            return  (<option key={category} value={category}>{category}</option>)
+                        {    uniqueCat.map(category => {
+                                return  (<button key={category} onClick={ ()=>changeCat(category) } className={setClasses(category)} >{category}</button>)
                         })
-                    }
+                        }
+                    </div>
 
-                </select>
+
+                {/* Dropdown MENU HIDDEN ON LARGE VIEWPORTS */}
+                
+                    <div className='d-block d-sm-block d-md-none'>
+                        <p>Select a category</p>
+                        <select className="form-control form-control-md" onChange={(e) => changeCategory(e)}>
+                        <option key="213231" value="all" >Show all</option>
+                            { 
+                            uniqueCat.map(category => {
+                                    return  (<option key={category} value={category}>{category}</option>)
+                                })
+                            }
+
+                        </select>
+                    </div>
+                </div>
             </div>
-
         </div>
     )
 }

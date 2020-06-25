@@ -15,8 +15,8 @@ const header = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto"> 
             
-                <Nav.Link href='#home'><Link className='nav-link active' to='/'>Home</Link></Nav.Link>
-                <Nav.Link><Link className='nav-link' to='/portfolio'>Portfolio</Link></Nav.Link>
+                <Link className='nav-link active' to='/'>Home</Link>
+                <Link className='nav-link' to='/portfolio'>Portfolio</Link>
                     {/* <NavDropdown title="My porfolio" id="basic-nav-dropdown" >
                         <Link className='dropdown-item' to='/'>Action</Link>
                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -24,8 +24,8 @@ const header = () => {
                         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                             
                     </NavDropdown> */}
-                    <Nav.Link><Link className='nav-link' to='/aboutme'>About me</Link></Nav.Link>
-                    <Nav.Link><Link className='nav-link' to='/contact'>Contact</Link></Nav.Link>
+                    <Link className='nav-link' to='/aboutme'>About me</Link>
+                    <Link className='nav-link' to='/contact'>Contact</Link>
                 </Nav>
                 {/* <Form inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />

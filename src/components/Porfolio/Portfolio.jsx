@@ -62,12 +62,19 @@ class Portfolio extends Component {
             return <SelectedPortfolio selectedCategory={this.state.setCategory} backToPortfolioPage={this.clearSelectedPortfolio} info={this.state.selectedPortfolio} />
         }
           return (
-            this.state.portfolio_data.map(item => {
+
+            <div className='container'>
+                <div className='row'>
+                {   this.state.portfolio_data.map(item => {
                 return (
-                    <div key={item.key} className="col-md-4 my-4">
-                        <Sample info={item} openSelectedPortfolio={this.openSelectedPortfolio} changeCat={this.portfolioByCategory}/>
-                    </div>
-                )})
+
+                            <div key={item.key} className="col-md-4 my-4">
+                                <Sample info={item} openSelectedPortfolio={this.openSelectedPortfolio} changeCat={this.portfolioByCategory}/>
+                            </div>
+
+                )}) }
+                </div>
+            </div>
             )
     }
 
@@ -85,14 +92,8 @@ class Portfolio extends Component {
         return( 
             <React.Fragment>
                 <TitleBar pageTitle = {title} />
-                
-                <div className='container'>
-                <div className='row'>
-                    {this.displayCatSelection()}
-                    {this.displayPortfolio()}
-                </div></div>
-
-
+                {this.displayCatSelection()}
+                {this.displayPortfolio()}
             </React.Fragment>    
         );
     }

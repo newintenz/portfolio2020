@@ -36,21 +36,30 @@ const src = "../images/portfolio/" + array.image;
 
    return (
          <React.Fragment>
-            <div className='col-sm-3'>
-               <div  className="btn-group" role="group">
-                  <button onClick={props.backToPortfolioPage} className='btn btn-light'> <FontAwesome icon='arrow-left' /> { backBtnLabel() }</button>
+            <div className='container'>
+               <div className='row'>
+                  <div className='col-sm-12 py-3'>
+                     <div  className="btn-group" role="group">
+                        <button onClick={props.backToPortfolioPage} className='btn btn-light'> <FontAwesome icon='arrow-left' /> { backBtnLabel() }</button>
+                        
+                     </div> 
+                  </div>
                </div>
                <hr/>
-                  <h6>Technologies used on this project:</h6>
-                  {displayTech()}
-            </div>
+               <div className='row'>
+                  <div className='col-sm-8 px-4'>
 
-            <div className='col-sm-8 px-4'>
-               <h2>{array.title}</h2>
-               <hr/>
-               <p>{array.description}</p>
-               
-               <img src={src} className="card-img-top" alt={array.title} />
+                     <h2>{array.title}</h2>
+                     <p>{array.description}</p>
+                     
+                     <img src={src} className="card-img-top" alt={array.title} />
+                  </div>
+
+                  <div className='col-sm-3 py-5'>
+                        <h6>Technologies used on this project:</h6>
+                        {displayTech()}
+                  </div>
+               </div>
             </div>
          </React.Fragment>
    );

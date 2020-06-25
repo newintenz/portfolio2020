@@ -6,8 +6,9 @@
     color: #fff !important;
     font-family: Quicksand;
     font-weight: 700;
-    font-size: 1.2em;
-    margin: .6em 1em;
+    font-size: 1em;
+    margin: .6em .5em;
+    text-transform: uppercase;
 }
 
 .navbar-brand {

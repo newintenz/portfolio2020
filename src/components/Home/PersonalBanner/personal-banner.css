@@ -7,7 +7,10 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
     margin-bottom: 80px;
-    box-shadow: inset 0px 0px 30px #999;
+    /* box-shadow: inset 0px 0px 30px #999; */
+    /* border: solid 2px ; */
+    /* border-color: transparent transparent transparent transparent;
+    border-radius:  0  0 10%/100px 0 ; */
 }
  
 /* .personal-banner p {

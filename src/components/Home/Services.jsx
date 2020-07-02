@@ -27,8 +27,8 @@ const Services = () =>{
                 <div className='offset-md-1 offset-sm-0 col-sm-12 col-md-6 py-3'>
                     <h2>How I can help</h2>
                     <p style={{'textAlign':"justify"}}>Your online presence is more important than ever before. Your website needs to represent you or your business in the best possible way and it needs to be easily descoverable in the sea of information available online. Not a simple task these days.  </p>
-                    <p><strong>Let's see how you can benefit</strong>  </p>
-                    <p><em>With twelve years of experience in web development I've picked up a thing or two.</em></p>
+                    <p><strong>Get in touch and find out how I can help.</strong>  </p>
+                    {/* <p><em>With twelve years of experience in web development I've picked up a thing or two.</em></p> */}
                     <Link to='/contact'><button className='btn hipcool btn-purple btn-lg my-4'>Contact me</button></Link>
                 </div>
             </div>

@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Rellax from "rellax";
 import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
 
 const Services = () =>{
 
+    useEffect(() => {
+        new Rellax(".phone-slide", {// <---- Via class name
+          breakpoints: [576, 768, 1201] ,
+          speed: -2,
+          center: true,
+          round: true,
+          vertical: true,
+          horizontal: false
+        });
+      });
+  
 
     const phoneImage = "../images/responsive-phone.png";
 
@@ -39,15 +51,17 @@ const Services = () =>{
 
             <div className='container-fluid' style={{"background":"#f3f3f3"}}>
                 <div className='container'>
-                    <div className='row my-5 justify-content-center' >
-                        <div className='col-md-12 col-lg-5 py-5'>
-                            <h2>Responsive Web Design</h2>
-                            <p >Accessibility and design combined. The website needs to be light and user-friendly and it should be easily viewed on any device. With hundreds of resolutions and screen sizes, your website needs to adapt and look great on any display. With most users accessing the internet thru their phone, its important to present them with the sleek and seamless experience they will come back to. </p>
+                    <div className='row my-5 justify-content-center hidden-overflow'  >
 
-                        </div>
-                        <div className='col-xs-12'>
-                            <Image src={phoneImage} className='mx-auto d-block img-fluid' />
-                        </div>
+                            <div className='col-md-12 col-lg-5 py-5'>
+                                <h2>Responsive Web Design</h2>
+                                <p >Accessibility and design combined. The website needs to be light and user-friendly and it should be easily viewed on any device. With hundreds of resolutions and screen sizes, your website needs to adapt and look great on any display. With most users accessing the internet thru their phone, its important to present them with the sleek and seamless experience they will come back to. </p>
+
+                            </div>
+                            <div className='col-xs-12'>
+                                <Image src={phoneImage}  data-rellax-xs-speed='-1' className='phone-slide mx-auto d-block img-fluid' />
+                            </div>
+
                     </div>
             </div>
         </div>

@@ -35,6 +35,9 @@ a:hover {
     text-decoration: none;
 }
 
+.hidden-overflow {
+    overflow: hidden;
+}
 
 .pageTitle {
     text-align: center;

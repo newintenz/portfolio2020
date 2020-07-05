@@ -10,7 +10,7 @@ const home = () => {
             <PersonalBanner/>
            
             <Services />
-             <Tools />
+             {/* <Tools /> */}
         </React.Fragment>
 
     )

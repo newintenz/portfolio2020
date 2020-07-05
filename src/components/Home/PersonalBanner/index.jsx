@@ -1,22 +1,22 @@
 import React, { useEffect }  from 'react';
 import { Image } from 'react-bootstrap';
 import { Link } from "react-router-dom"; 
-// import Rellax from "rellax";
+import Rellax from "rellax";
 import "./personal-banner.css";
 
 
 const Personalbanner = () => {
 
-    // useEffect(() => {
-    //   new Rellax(".animate", {// <---- Via class name
-    //     breakpoints: [576, 768, 1201] ,
-    //     speed: -1,
-    //     center: false,
-    //     round: true,
-    //     vertical: true,
-    //     horizontal: false
-    //   });
-    // });
+    useEffect(() => {
+      new Rellax(".animate", {// <---- Via class name
+        breakpoints: [576, 768, 1201] ,
+        speed: 5,
+        center: false,
+        round: true,
+        vertical: true,
+        horizontal: false
+      });
+    });
 
 
     const profile_picture = "../../images/portrait.jpg";
@@ -25,8 +25,8 @@ const Personalbanner = () => {
 
         <div className='container-fluid personal-banner'>
 
-                <div className='container'>
-                <div className='row justify-content-start py-3'>
+                <div className='container '>
+                <div className='row justify-content-start py-3 '>
                     <div className='col-md-4 col-sm-12'>
                         <Image className='d-block img-fluid profile-pic '  src={profile_picture} roundedCircle />
                     </div>

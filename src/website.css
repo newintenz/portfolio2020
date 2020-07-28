@@ -31,6 +31,15 @@ p {
     line-height: 1.8em;
 }
 
+
+.list-skills .badge-pill {
+    margin: 5px;
+    margin-left: 0px;
+    font-size: .8em;
+    padding: 0.7em;
+    background-color: rgb(255, 24, 132);
+}
+
 a:hover {
     text-decoration: none;
 }
